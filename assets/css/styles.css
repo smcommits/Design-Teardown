@@ -356,7 +356,7 @@ body {
 
 .full .title {
   width: 436px;
-  height: 76px;
+  min-height: 76px;
   color: #fff;
   font-weight: 700;
   font-size: 1.5em;
