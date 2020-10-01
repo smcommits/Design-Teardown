@@ -309,7 +309,7 @@ body{
   width: 245px;
   height: 249px;
   background-color: var(--light-bg);
-  margin: 20px 0px; 
+  margin: 20px 0px;
   border-radius: 5px;
 }
 
@@ -382,7 +382,7 @@ body{
 
 }
 
-.latest-articles {
+.more-links {
   width: 210px;
   height: 50px;
   margin: 94px auto;
@@ -416,10 +416,10 @@ body{
   padding: 20px;
   font-weight: 700;
   color: #fff;
- 
+
   text-align: center;
 
-  
+
 }
 
 .shipping-now .content {
@@ -429,7 +429,7 @@ body{
   background-color: var(--light-bg);
   border-radius: 5px;
 
-  
+
 }
 
 .shipping-now .button {
@@ -450,5 +450,91 @@ body{
 }
 
 
+/* community authors */
+.highlighted-author {
+  width: 100%;
+  padding: 64px 110px 121px 51px;
+  display: flex;
+  align-items: center;
+}
 
+.highlighted-author .photo {
+  width: 245px;
+  height: 215px;
+  background-color: var(--darker-bg);
+  border-radius: 5px;
+}
 
+.highlighted-wrapper {
+  margin-left: 30px;
+}
+
+.highlighted-author .title {
+  width: 225px;
+  height: 38px;
+  border-radius: 5px;
+  background-color: var(--light-bg);
+  display: inline-block;
+}
+
+.highlighted-author .content {
+  width: 1013px;
+  height: 168px;
+  border-radius: 5px;
+  margin-top: 28px;
+  background-color: var(--light-bg);
+  display: inline-block;
+}
+
+/* other authors */
+.community-authors {
+  padding-left: 55px;
+}
+
+#other-authors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 175px;
+  width: 1353px;
+  margin: auto;
+}
+
+#other-authors .authors {
+  display: flex;
+}
+
+.authors .photo {
+  width: 67px;
+  height: 67px;
+  background-color: var(--dark-bg);
+  border-radius: 5px;
+}
+
+.authors-info-wrapper {
+  margin-left: 28px;
+}
+
+.authors-info-wrapper .name {
+  width: 200px;
+  height: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: var(--light-bg);
+}
+
+.authors-info-wrapper .title {
+  min-height: 34px;
+  border-radius: 5px;
+  background-color: var(--dark-bg);
+  margin-bottom: 35px;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 15px;
+  color: #fff;
+}
+
+.authors-info-wrapper .content {
+  height: 126px;
+  border-radius: 5px;
+  background-color: var(--light-bg);
+}
