@@ -46,6 +46,15 @@ body {
   border-radius: 5px;
 }
 
+.footer-links li {
+  width: 130px;
+  height: 25px;
+  background-color: var(--light-bg);
+  border-radius: 5px;
+  margin: 10px;
+  list-style-type: none;
+}
+
 .nav-links li:hover {
   background-color: var(--dark-bg);
 }
@@ -158,6 +167,19 @@ body {
   border-radius: 5px;
 }
 
+.article-container .arrow {
+  width: 128px;
+  height: 128px;
+  background-color: var(--light-bg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.article-container:hover .arrow {
+  background-color: var(--darker-bg);
+}
+
 #profile-container .arrow {
   width: 100px;
   height: 50px;
@@ -264,15 +286,6 @@ body {
   margin-bottom: 28px;
 }
 
-.article-container .arrow {
-  width: 128px;
-  height: 128px;
-  background-color: var(--light-bg);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 .advertisment {
   width: 398px;
   height: 208px;
@@ -289,10 +302,6 @@ body {
   box-shadow: 0 0 30px 5px #0000007d;
   border-radius: 5px;
   z-index: 1;
-}
-
-.article-container:hover .arrow {
-  background-color: var(--darker-bg);
 }
 
 .red-large {
@@ -427,7 +436,6 @@ body {
   margin: 51px auto 0 auto;
   background-color: var(--darker-bg);
 }
-
 
 /* community authors */
 .highlighted-author {
@@ -588,11 +596,6 @@ body {
   padding: 39px;
 }
 
-.news-letter {
-  border-radius: 5px;
-  background-color: var(--dark-bg);
-}
-
 .container .before-title {
   width: 208px;
   height: 15px;
@@ -631,6 +634,8 @@ body {
 /* news-letter */
 .news-letter {
   padding: 39px 39px;
+  border-radius: 5px;
+  background-color: var(--dark-bg);
 }
 
 .news-letter .image {
@@ -702,15 +707,6 @@ body {
   justify-content: center;
 }
 
-.footer-links li {
-  width: 130px;
-  height: 25px;
-  background-color: var(--light-bg);
-  border-radius: 5px;
-  margin: 10px;
-  list-style-type: none;
-}
-
 .footer-links li:nth-child(even) {
   width: 160px;
 }
@@ -731,7 +727,7 @@ body {
   justify-content: center;
 }
 
-.footer-upper-nav li {
+.footer-upper-nav .test {
   width: 101px;
   height: 40px;
   background-color: var(--light-bg);
@@ -739,7 +735,7 @@ body {
   margin: 10px;
 }
 
-.footer-upper-nav li:nth-child(even) {
+.footer-upper-nav .test:nth-child(even) {
   width: 149px;
   height: 40px;
   background-color: var(--light-bg);
