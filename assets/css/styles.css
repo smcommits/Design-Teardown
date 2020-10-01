@@ -66,6 +66,24 @@
 #profile-container {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+}
+
+#dont-miss {
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#dont-miss > * {
+  background-color: var(--darker-bg);
+  padding: 10px;
 }
 
 #profile-container .profile {
@@ -133,7 +151,7 @@
   background-color: var(--light-bg);
   margin-right: 20px;
   border-radius: 5px;
-  
+
 }
 
 #profile-container .arrow{
@@ -152,6 +170,111 @@
 .membership {
   width: 100%;
   height: 468px;
-  
+  background-color: var(--dark-bg);
+  padding: 70px 158px;
+  position: relative;
 }
 
+.membership .title {
+  width: 650px;
+  height: 99px;
+  background-color: var(--light-bg);
+  font-size: 1.3em;
+  margin-bottom: 28px;
+  border-radius: 5px;
+  padding: 15px;
+  color: #fff;
+}
+
+.membership .bullet {
+  width: 650px;
+  height: 33px;
+  margin-bottom: 10px;
+  background-color: var(--light-bg);
+  border-radius: 5px;
+}
+
+.membership .button {
+  width: 393px;
+  height: 64px;
+  border-radius: 5px;
+  background-color: var(--darker-bg);
+  margin-top: 20px;
+}
+
+.membership .image {
+  width: 250px;
+  height: 323px;
+  background-color: var(--darker-bg);
+  border-radius: 5px;
+  position: absolute;
+  top: -70px;
+  right: 170px;
+}
+
+/* latest posts */
+.latest-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 590px 750px 590px;
+  width: 1440px;
+}
+
+.article-container {
+  background-color: var(--lighter-bg);
+  padding: 60px;
+  position: relative;
+}
+
+.article-container .date {
+  width: 90px;
+  height: 18px;
+  margin-bottom: 9px;
+  background-color: var(--light-bg);
+  border-radius: 5px;
+}
+
+.article-container .title {
+  width: 100%;
+  height: 81px;
+  margin-bottom: 21px;
+  background-color: var(--darker-bg);
+  border-radius: 5px;
+}
+
+.article-container .author {
+  width: 133px;
+  height: 18px;
+  background-color: var(--light-bg);
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.article-container .content {
+  width: 100%;
+  height: 126px;
+  background-color: var(--light-bg);
+  margin-bottom: 28px;
+}
+
+.article-container .arrow {
+  width: 128px;
+  height: 128px;
+  background-color: var(--light-bg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.article-container:hover {
+  background-color: var(--dark-bg);
+  transform: scale(1.1);
+  transition: all 0.2s;
+  box-shadow: 0 0 30px 5px #0000007d;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.article-container:hover .arrow {
+  background-color: var(--darker-bg);
+}
