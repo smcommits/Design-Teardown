@@ -7,10 +7,17 @@
   font-family: 'Raleway', sans-serif;
 }
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
+  overflow-x: hidden;
 }
 
 :root {
@@ -22,6 +29,7 @@ body {
 
 .attractive {
   background-color: var(--dark-bg) !important;
+  position: relative;
 }
 
 /* header styles */
@@ -165,6 +173,53 @@ body {
   background-color: var(--light-bg);
   margin-right: 20px;
   border-radius: 5px;
+}
+
+/* seriously-red */
+
+.seriously-red {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 40px;
+  top: 52px;
+  cursor: pointer;
+}
+
+.circle-border {
+  width: 52px;
+  height: 52px;
+  background-color: var(--light-bg);
+  border-radius: 5px;
+}
+
+.circle {
+  background-image: url(../images/circle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.seriously-red:hover .serious-text {
+  background-color: var(--darker-bg);
+  border: 1px solid var(--darker-bg);
+  color: var(--dark-bg);
+}
+
+.seriously-red:hover .circle {
+  transform: rotate(-180deg);
+  transition: transform 0.2s ease-out;
+}
+
+.seriously-red span {
+  height: 40px;
+  border: 1px solid var(--light-bg);
+  border-radius: 11px;
+  font-size: 1.1em;
+  color: var(--light-bg);
+  font-weight: 700;
+  padding: 0.5em 0.75em;
+  margin-left: 14px;
 }
 
 .article-container .arrow {
@@ -352,6 +407,9 @@ body {
 
 .full {
   padding: 50px 20px;
+  width: 1320px;
+  border-radius: 5px;
+  margin: 90px auto 0 auto;
 }
 
 .full .title {
@@ -761,4 +819,12 @@ body {
   border-radius: 5px;
   height: 50px;
   width: 50px;
+}
+
+@media (max-width: 1440px) {
+  *{
+    max-width: 100% !important;
+  }
+  
+
 }
