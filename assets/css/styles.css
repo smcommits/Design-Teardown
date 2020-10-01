@@ -275,6 +275,15 @@ body{
   left: 0;
 }
 
+.advertisment {
+  width: 398px;
+  height: 208px;
+  background-color: var(--light-bg);
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 20px;
+
+}
 .hover:hover {
   background-color: var(--dark-bg);
   transform: scale(1.1);
