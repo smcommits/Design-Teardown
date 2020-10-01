@@ -52,7 +52,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Icons are downloaded from Youtube's original page.
 - Fonts are imported from Google Fonts.
 
 
